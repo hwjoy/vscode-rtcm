@@ -1,0 +1,61 @@
+{
+	"$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+	"name": "RTCM",
+	"patterns": [
+		{
+			"include": "#keywords"
+		},
+		{
+			"include": "#strings"
+		},
+		{
+			"include": "#numeric"
+		},
+		{
+			"include": "#error"
+		},
+		{
+			"include": "#data"
+		}
+	],
+	"repository": {
+		"keywords": {
+			"patterns": [{
+				"name": "keyword.control.rtcm",
+				"match": "\\b(Start|Length|MsgNo|RefStationId|DayOfWeek|Epoch|ECEF|Data|CRC|QuarterCycle|AntennaDESC|AntennaSN|ReceiverTypeDESC|ReceiverFirmwareVer.|ReceiverSN|BiasIndicator|FDMASignalsMask|L1C/A|L1P|L2C/A|L2P)\\b"
+			}]
+		},
+		"strings": {
+			"name": "string.quoted.double.rtcm",
+			"begin": "\"",
+			"end": "\"",
+			"patterns": [
+				{
+					"name": "constant.character.escape.rtcm",
+					"match": "\\\\."
+				}
+			]
+		},
+		"numeric": {
+			"patterns": [
+				{
+					"name": "constant.numeric.rtcm",
+					"match": "\\b[0x]*[0-9a-fA-F]+\\b"
+				}
+			]
+		},
+		"error": {
+			"patterns": [{
+				"name": "invalid.illegal.rtcm",
+				"match": "\\b(Error)\\b"
+			}]
+		},
+		"data": {
+			"patterns": [{
+				"name": "markup.underline.rtcm",
+				"match": "\\[[0-9a-fA-F]+\\]"
+			}]
+		}
+	},
+	"scopeName": "source.rtcm"
+}

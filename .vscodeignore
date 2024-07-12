@@ -1,10 +1,24 @@
 .vscode/**
 .vscode-test/**
+node_modules/**
+out
+media/**
+src/**
 test/**
 .gitignore
 .yarnrc
 vsc-extension-quickstart.md
+**/tsconfig.json
 **/jsconfig.json
 **/*.map
 **/.eslintrc.json
 **/.vscode-test.*
+**/*.ts
+.esbuild.config.js
+*.gif
+build
+*.tgz
+*.vsix
+
+# We need the codicon node module included for the fonts + icons to work
+!node_modules/@vscode/codicons/dist
