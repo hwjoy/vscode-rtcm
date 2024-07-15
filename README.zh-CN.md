@@ -1,5 +1,7 @@
 # RTCM
 
+简体中文 | [English](README.md)
+
 RTCM扩展是一个用于VSCode的扩展插件，用来解析和显示RTCM协议的文件内容.
 
 ## 如何使用

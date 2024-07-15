@@ -1,5 +1,7 @@
 # RTCM
 
+English | [简体中文](README.zh-CN.md)
+
 The RTCM extension is an extension for VSCode that parses and displays the RTCM files.
 
 ## Usages

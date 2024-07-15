@@ -7,12 +7,12 @@ All notable changes to the "vscode-rtcm" extension will be documented in this fi
 - Calculate Pseudorange/CarrierPhase/Doppler of GPS
 - Filter By Satellite System
 
-## [0.2.0] - 2024-7-9
+## [0.2.0]
 
 - Add ".gps" suffix
 - Fix CodeLens Bug
 
-## [0.1.0] - 2024-4-7
+## [0.1.0]
 
 - Parse RTCM files with both ".rtcm" ".track" suffixs
 - CodeLens for Epoch Range
@@ -20,6 +20,6 @@ All notable changes to the "vscode-rtcm" extension will be documented in this fi
 - StatusBar for Epoch Missing Rate
 - Change Date of RTCM
 
-## [0.0.1] - 2023-12-18
+## [0.0.1]
 
 - Initial release
